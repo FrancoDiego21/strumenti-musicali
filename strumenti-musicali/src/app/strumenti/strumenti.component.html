@@ -1,0 +1,21 @@
+<br>
+<h4>Magliette</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Tipologia</th>
+            <th class="text-end">Prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stru of strumenti">
+            <td>{{ stru.id }}</td>
+            <td>{{ stru.marca }}</td>
+            <td>{{ stru.categoria }}</td>
+            <td class="text-end"><i>€ {{ stru.prezzo }}</i></td>
+        </tr>
+    </tbody>
+</table>
